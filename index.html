@@ -409,7 +409,7 @@ const CURRENCY             = "₹";
 const DELIVERY_FEE_ORIGINAL = 30;  // shown struck-through as the early bird offer
 const DELIVERY_FEE          = 0;   // amount actually charged — set back to a number to end the offer
 const DELIVERY_OFFER_LABEL  = "Early Bird Offer — Free Delivery";
-const LOGO_URL             = "";   // e.g. "logo.png" — leave "" to use the default emoji logo
+const LOGO_URL             = "images/Logo.jpg";   // e.g. "logo.png" — leave "" to use the default emoji logo
 const QR_IMAGE_URL         = "";   // e.g. "qr.png" — leave "" to hide the "Scan to order" section
 
 /* ============================================================
@@ -420,12 +420,14 @@ const QR_IMAGE_URL         = "";   // e.g. "qr.png" — leave "" to hide the "Sc
    "image" can be a URL or left as "" for a placeholder icon.
    ============================================================ */
 const MENU = [
+  { id:"non-veg-thali", name:"Non Veg Thali", description:"A complete non-vegetarian meal platter.", price:150, category:"Thali", image:"images/NonVegThali.jpg", available:true },
+  { id:"veg-thali", name:"Veg Thali", description:"A complete vegetarian meal platter.", price:120, category:"Thali", image:"images/VegThali.jpg", available:true },
+  { id:"roti-sabji", name:"Roti Sabji", description:"Roti served with seasonal vegetable sabji.", price:50, category:"Roti & Sides", image:"images/RotiSabji.webp", available:true },
+  { id:"extra-roti", name:"Extra Roti", description:"Single extra roti.", price:10, category:"Roti & Sides", image:"images/Roti.jpg", available:true },
   { id:"chicken-biryani", name:"Chicken Biryani", description:"Fragrant rice slow-cooked with spiced chicken.", price:100, category:"Biryani", image:"images/ChickenBiryani.jpg", available:true },
   { id:"pork-biryani", name:"Pork Biryani", description:"Fragrant rice slow-cooked with spiced pork.", price:150, category:"Biryani", image:"images/PorkBiryani.jpg", available:true },
   { id:"paneer-biryani", name:"Paneer Biryani", description:"Fragrant rice cooked with spiced paneer.", price:90, category:"Biryani", image:"images/PaneerBiryani.jpg", available:true },
-  { id:"veg-pulao", name:"Veg Pulao", description:"Fragrant rice cooked with mixed vegetables and spices.", price:70, category:"Biryani", image:"images/VegPulao.jpg", available:true },
-  { id:"roti-sabji", name:"Roti Sabji", description:"Roti served with seasonal vegetable sabji.", price:50, category:"Roti & Sides", image:"images/RotiSabji.webp", available:true },
-  { id:"extra-roti", name:"Extra Roti", description:"Single extra roti.", price:10, category:"Roti & Sides", image:"images/Roti.jpg", available:true }
+  { id:"veg-pulao", name:"Veg Pulao", description:"Fragrant rice cooked with mixed vegetables and spices.", price:70, category:"Biryani", image:"images/VegPulao.jpg", available:true }
 ];
 
 /* ============================================================
